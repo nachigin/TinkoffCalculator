@@ -16,6 +16,8 @@
 		96BC98822B9485C80098B212 /* TinkoffCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC98812B9485C80098B212 /* TinkoffCalculatorUITests.swift */; };
 		96BC98842B9485C80098B212 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC98832B9485C80098B212 /* TinkoffCalculatorUITestsLaunchTests.swift */; };
 		96BC98912B9485D50098B212 /* TinkoffCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC98902B9485D50098B212 /* TinkoffCalculatorTests.swift */; };
+		96BC98972BCA85170098B212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC986B2B9464330098B212 /* ViewController.swift */; };
+		96BC98982BCA85180098B212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC986B2B9464330098B212 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -268,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BC98972BCA85170098B212 /* ViewController.swift in Sources */,
 				96BC98842B9485C80098B212 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */,
 				96BC98822B9485C80098B212 /* TinkoffCalculatorUITests.swift in Sources */,
 			);
@@ -277,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BC98982BCA85180098B212 /* ViewController.swift in Sources */,
 				96BC98912B9485D50098B212 /* TinkoffCalculatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
