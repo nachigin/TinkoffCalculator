@@ -56,7 +56,7 @@ class ViewController: UIViewController {
             label.text = "0"
         }
         
-        if !(buttonText == ",") && label.text == "Ошибка" {
+        if !(buttonText == ",") && label.text == "Ошибка" || calculationHistory.isEmpty {
             resetLabelText()
         }
         
@@ -80,6 +80,8 @@ class ViewController: UIViewController {
         
         calculationHistory.append(.number(labelNumber))
         calculationHistory.append(.operation(buttonOperation))
+        //print(calculationHistory)
+        //calculationHistory[calculationHistory.count - 1] = CalculationHistoryItem.operation(buttonOperation)
         
         resetLabelText()
     }
