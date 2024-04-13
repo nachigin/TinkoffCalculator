@@ -47,12 +47,20 @@ class ViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: UIButton) {
         guard let buttonText = sender.currentTitle else { return
             }
-        print(buttonText)
+        //print(buttonText)
         if buttonText == "," && label.text?.contains(",") == true {
             return
         }
         
-        if label.text == "0" {
+        if buttonText == "," && label.text == "Ошибка" {
+            label.text = "0"
+        }
+        
+        if !(buttonText == ",") && label.text == "Ошибка" {
+            resetLabelText()
+        }
+        
+        if label.text == "0" && !(buttonText == ",") {
             label.text = buttonText
         } else {
             label.text?.append(buttonText)
@@ -64,7 +72,7 @@ class ViewController: UIViewController {
             let buttonText = sender.currentTitle,
             let buttonOperation = Operation(rawValue: buttonText)
             else { return }
-        print(buttonText)
+        //print(buttonText)
         guard
             let labelText = label.text,
             let labelNumber = numberFormatter.number(from: labelText)?.doubleValue
@@ -78,7 +86,7 @@ class ViewController: UIViewController {
     
     @IBAction func clearButtonPressed() {
         calculationHistory.removeAll()
-        print("C")
+        //print("C")
         
         resetLabelText()
     }
@@ -88,7 +96,7 @@ class ViewController: UIViewController {
             let labelText = label.text,
             let labelNumber = numberFormatter.number(from: labelText)?.doubleValue
             else { return }
-        print("=")
+        //print("=")
         calculationHistory.append(.number(labelNumber))
         
         do {
