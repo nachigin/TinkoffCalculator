@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9624D5152BCAC3930032CD8C /* CalculationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624D5142BCAC3930032CD8C /* CalculationListViewController.swift */; };
+		9624D5162BCAC3930032CD8C /* CalculationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624D5142BCAC3930032CD8C /* CalculationListViewController.swift */; };
+		9624D5172BCAC3930032CD8C /* CalculationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624D5142BCAC3930032CD8C /* CalculationListViewController.swift */; };
 		96BC98682B9464330098B212 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC98672B9464330098B212 /* AppDelegate.swift */; };
 		96BC986A2B9464330098B212 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC98692B9464330098B212 /* SceneDelegate.swift */; };
 		96BC986C2B9464330098B212 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BC986B2B9464330098B212 /* ViewController.swift */; };
@@ -38,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9624D5142BCAC3930032CD8C /* CalculationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationListViewController.swift; sourceTree = "<group>"; };
 		96BC98642B9464330098B212 /* TinkoffCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96BC98672B9464330098B212 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96BC98692B9464330098B212 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 				96BC98652B9464330098B212 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		96BC98652B9464330098B212 /* Products */ = {
 			isa = PBXGroup;
@@ -108,6 +113,7 @@
 				96BC98702B9464340098B212 /* Assets.xcassets */,
 				96BC98722B9464340098B212 /* LaunchScreen.storyboard */,
 				96BC98752B9464340098B212 /* Info.plist */,
+				9624D5142BCAC3930032CD8C /* CalculationListViewController.swift */,
 			);
 			path = TinkoffCalculator;
 			sourceTree = "<group>";
@@ -193,7 +199,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					96BC98632B9464330098B212 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -260,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9624D5152BCAC3930032CD8C /* CalculationListViewController.swift in Sources */,
 				96BC986C2B9464330098B212 /* ViewController.swift in Sources */,
 				96BC98682B9464330098B212 /* AppDelegate.swift in Sources */,
 				96BC986A2B9464330098B212 /* SceneDelegate.swift in Sources */,
@@ -270,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9624D5162BCAC3930032CD8C /* CalculationListViewController.swift in Sources */,
 				96BC98972BCA85170098B212 /* ViewController.swift in Sources */,
 				96BC98842B9485C80098B212 /* TinkoffCalculatorUITestsLaunchTests.swift in Sources */,
 				96BC98822B9485C80098B212 /* TinkoffCalculatorUITests.swift in Sources */,
@@ -282,6 +290,7 @@
 			files = (
 				96BC98982BCA85180098B212 /* ViewController.swift in Sources */,
 				96BC98912B9485D50098B212 /* TinkoffCalculatorTests.swift in Sources */,
+				9624D5172BCAC3930032CD8C /* CalculationListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +365,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -416,6 +426,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

@@ -56,7 +56,7 @@ class ViewController: UIViewController {
             label.text = "0"
         }
         
-        if !(buttonText == ",") && label.text == "Ошибка" || calculationHistory.isEmpty {
+        if !(buttonText == ",") && label.text == "Ошибка" {
             resetLabelText()
         }
         
@@ -109,6 +109,16 @@ class ViewController: UIViewController {
             label.text = "Ошибка"
         }
         calculationHistory.removeAll()
+    }
+    
+    @IBAction func unwindAction(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "CALCULATIONS_LIST",
+              let calculationsListVC = segue.destination as? CalculationListViewController else { return }
+        calculationsListVC.result = label.text
     }
     
     @IBOutlet weak var label: UILabel!
